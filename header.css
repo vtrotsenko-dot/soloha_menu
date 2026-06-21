@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    justify-content: space-between; /* Лого зліва, меню справа */
+    align-items: center;
+    padding: 15px 5%; /* Використовуємо %, щоб на телефонах і ПК виглядало гарно */
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.emblem {
+    width: 60px; /* Зменшено для кращого балансу */
+    height: 60px;
+    object-fit: contain; /* Щоб не було розтягнення */
+}
+
+.text-box h1 {
+    font-size: 32px; /* Оптимальний розмір для назви */
+    line-height: 1;
+    color: #2c2c2c;
+}
+
+.text-box h2 {
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.header-actions button {
+    border: #2c2c2c;
+    width: 5px;
+    height: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
