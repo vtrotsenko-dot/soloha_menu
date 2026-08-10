@@ -1,0 +1,108 @@
+.contact-item {
+    display: flex;         
+    align-items: center;               
+    margin-bottom: 6px;
+
+
+}
+.icon {
+    display: block;
+    object-fit: contain;   
+    flex-shrink: 0;   
+    width: 35px;
+    height: auto;     
+}
+.contact-item h3{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    line-height: 0.8;
+    padding-left: 12px;
+    font-size: 20px;
+}
+
+
+.mesendj-container {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; Дозволяє перенос елементів */
+    gap: 22px;
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+
+.mesendj-btn {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    cursor: pointer; 
+    width: 120px;
+    height: 50px;
+    margin-bottom: 0;
+    border: 2px solid #000; /* Чорна рамка */
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    font-family: 'Marck Script', cursive;
+    background: transparent;
+    color: #000;
+}
+.mesendj-btn h3 {
+    margin: 0;
+    font-size: 18px;
+}
+.mesendj-btn .icon {
+    width: 28px;              /* Трохи менше, щоб не розтягувало кнопку */
+    height: auto;
+    margin-right: 8px;
+}
+.contact-wrapper{
+    display: flex;
+    flex-direction: column; /* Ставить кожен .contact-item один під одним */
+    padding-left: 16px;
+    padding-top: 38px;
+    padding-bottom: 30px;
+}
+.text-content {
+    display: flex;
+    flex-direction: column;  /* Розміщує span один під одним */
+    line-height: 0.8;        /* Контролює відстань між рядками тексту */
+    font-size: 20px;
+}
+
+.fotterTittle{
+    font-size: 20px; 
+    text-align: center;
+}
+.section-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    padding: 16px;
+}
+
+.info{
+    text-align: left;
+
+}
+.textSpan{
+    font-size: 20px;
+    padding: 0 16px 0;
+}
+.footer-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Ставить кожен .contact-item один під одним */
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+}
+.map-wrapper{
+    text-align: center;
+    max-width: 100%;
+}

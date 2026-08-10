@@ -1,0 +1,125 @@
+header {
+    padding-bottom: 8px; 
+    background-color: #f0e6da;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.emblem {
+    max-width: 100%;
+    width: 60px; /* Зменшено для кращого балансу */
+    height: auto;
+    object-fit: contain; /* Щоб не було розтягнення */
+}
+
+
+.menu-btn {
+    background: none;        /* Прибирає фон */
+    border: none;            /* Прибирає рамку */
+    padding: 0;              /* Прибирає внутрішні відступи */
+    cursor: pointer;         /* Робить курсор у вигляді вказівника при наведенні */
+    display: flex;           /* Допомагає правильно вирівняти іконку всередині */
+    align-items: center;
+    justify-content: center;
+}
+.menu-btn img {
+    display: block;          /* Прибирає зайві відступи під картинкою */
+    width: 27px;             /* Встановіть потрібний вам розмір */
+    height: auto;
+}
+
+
+
+
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -80%;
+    width: 80%;
+    height: 100%;
+    background-color: #f2eade;
+    transition: 0.3s;
+    z-index: 999;
+    display: flex; /* Робимо sidebar флекс-контейнером */
+    flex-direction: column; /* Елементи будуть йти зверху вниз */
+}
+
+/* Клас, який ми будемо додавати через JS */
+.close-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Ця команда притискає хрестик вправо */
+    padding: 20px;
+    box-sizing: border-box; /* Щоб padding не виходив за межі */
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 30px; /* Розмір хрестика */
+    cursor: pointer;
+    line-height: 1;
+    color: black;
+}
+.sidebar.active {
+    position: fixed;
+    left: 0; /* Меню виїжджає на екран зліва */
+    z-index: 1000;
+    isolation: isolate;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Розносить елементи по краях */
+    align-items: center;
+    padding: 16px 15px;
+    width: 100%;
+}
+
+.nav-btn{
+    background: none;        /* Прибирає фон */
+    border: none;            /* Прибирає рамку */
+    padding: 0;              /* Прибирає внутрішні відступи */
+    cursor: pointer;         /* Робить курсор у вигляді вказівника при наведенні */
+    display: flex;           /* Допомагає правильно вирівняти іконку всередині */
+    align-items: center;
+    justify-content: center;
+}
+.nav-btn img{
+    display: block;          /* Прибирає зайві відступи під картинкою */
+    width: 50px;             /* Встановіть потрібний вам розмір */
+    height: 40px;
+}
+.hedclass{
+    background: none;        /* Прибирає фон */
+    border: none;            /* Прибирає рамку */
+    padding: 0;              /* Прибирає внутрішні відступи */
+    cursor: pointer;         /* Робить курсор у вигляді вказівника при наведенні */
+    display: flex;           /* Допомагає правильно вирівняти іконку всередині */
+    align-items: center;
+    justify-content: center;
+}
+.hedclass img{
+    display: block;          /* Прибирає зайві відступи під картинкою */
+    width: 14px;             /* Встановіть потрібний вам розмір */
+    height: 24px;
+}
+
+
+/* Опціонально: ефект при наведенні */
+.hedclass:hover{
+    opacity:0.7;
+}
+.nav-btn:hover {
+    opacity: 0.7;
+}
+.text-content span{
+    padding-left:12px ;
+}

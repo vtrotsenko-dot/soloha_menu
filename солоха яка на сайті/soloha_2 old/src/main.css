@@ -1,0 +1,133 @@
+.marck-script-regular,
+h2,
+h3,
+h4,
+h1 {
+  font-family: 'Marck Script', cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.photo {
+  width: 100%; /* Розтягує на всю ширину */
+  height: auto; /* Зберігає пропорції, щоб фото не сплющувалось */
+  display: block; /* Прибирає зайві відступи знизу */
+  object-fit: cover; /* Важливо: дозволяє картинці заповнювати простір красиво */
+}
+
+.intro-separator {
+  background-image: url('../img/vazerunokSection.svg');
+  background-position: center;
+  background-repeat: repeat-x;
+  height: 40px;
+}
+
+.meinMiddle {
+  max-width: 450px; /* Обмежуємо ширину для мобільного */
+  margin: 0 auto; /* Центруємо на екрані */
+  padding: 20px;
+  text-align: center;
+  font-family: 'Marck Script', cursive; /* Ваш шрифт */
+}
+
+/* Стиль для тексту привітання */
+.class-h3{
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* Стиль кнопок */
+.main-button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px; /* Відступ між кнопками */
+  padding: 8px;
+  background: transparent;
+  border: 2px solid #000; /* Чорна рамка */
+  font-family: 'Marck Script', cursive;
+  font-size: 42px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none; 
+  color: #000;
+}
+
+
+.main-bnt {
+    text-decoration: none;      /* Прибирає підкреслення */
+}
+
+/* Це правило прибирає фон при натисканні або виділенні */
+.main-button:active, 
+.main-button:focus {
+  background-color: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Розділювач */
+.class-hr {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+/* Заголовок "Наші фотографії" */
+.gallery-title {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 колонки однакової ширини */
+  gap: 15px; /* Відстань між фото */
+  max-width: 500px; /* Обмеження ширини для мобільного */
+  margin: 0 auto; /* Центрування всієї галереї на сторінці */
+  padding-left:16px; 
+  padding-right: 16px;
+  padding-bottom: 28px;
+
+}
+
+
+.gallery-grid img {
+  width: 100%; /* Фото завжди підлаштовується під ширину колонки */
+  height: auto; /* Зберігає пропорції */
+  display: block; /* Прибирає зайві відступи під картинкою */
+  border-radius: 8px; /* Якщо хочете заокруглені кути, як у дизайні */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  /* 3. Легка тонка рамка для вишуканості */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+
+
+.contact-item {
+  display: flex; /* Ставить іконку і текст в один ряд */
+  align-items: center; /* Вирівнює іконку і текст по центру по вертикалі */
+  gap: 5px; /* Відстань між іконкою та текстом */
+  margin-bottom: 5px; /* Відступ між різними рядками контактів */
+}
+
+
+
+/* Якщо текст занадто довгий і "ламається" */
+.contact-item h3 {
+  display: flex;
+  flex-direction: column;
+
+  line-height: 1.3;
+}
+.text-bnt{
+  font-weight: 400;                     /* Вага шрифту */
+  font-style: normal;                   /* Стиль (Regular означає звичайний) */
+  font-size: 32px;                      /* Розмір тексту */
+  line-height: 22px;                    /* Висота рядка */
+  letter-spacing: normal;               /* 0% еквівалентно normal */
+  text-align: center;
+  white-space: nowrap;
+}
+

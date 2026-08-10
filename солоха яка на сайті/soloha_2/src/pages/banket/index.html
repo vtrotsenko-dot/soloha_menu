@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soloha</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../components/footer/footer.css" />
+    <link rel="stylesheet" href="../../components/header/header.css" />
+    <link rel="stylesheet" href="../../global.css" />
+        <style>#preloader {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f0e6da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#preloader img {
+  width: 240px;
+  height: auto;
+  justify-content: center;   /* Центруємо по горизонталі */
+    align-items: center;
+}
+
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}</style>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../../Icon/Iconembleme.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="preloader"><img src="/img/loading.webp" alt=""></div>
+
+    <app-header></app-header>
+
+    <main>
+      <div class="mainFoto">
+        <img src="../../../img/titleBanket.svg" alt="#" class="photo" />
+        <div class="banket-oll">
+          <div class="banket-cards">
+            <h2 class="banquet-title">Банкет</h2>
+            <hr class="banket-hr">
+            <div>
+              <p class="banket-text"
+                >Наш банкетний зал вміщує до 150 гостей та чудово підходить для
+                весіль, ювілеїв, корпоративів, випускних, хрестин і сімейних
+                свят.Для вашої зручності дозволяється приносити власний алкоголь
+                та святковий торт за попереднім узгодженням. У залі встановлена
+                якісна акустична система, а власну музику можна легко підключити
+                через Bluetooth або USB.На території закладу є фотозона,
+                парковка, кондиціонери та генератор, що забезпечує комфортне
+                проведення заходу за будь-яких обставин. Також доступне місце
+                для танців, виступів музикантів або діджея.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="banket-oll">
+          <div class="banket-cards">
+            <h2 class="banquet-title">Кейтерінг</h2>
+            <hr class="banket-hr" />
+            <div>
+              <p class="banket-text"
+                >Організуємо виїзне обслуговування для будь-яких подій: весіль,
+                корпоративів, днів народжень та сімейних свят. Пропонуємо
+                доставку готових фуршетних боксів, а також повноцінний кейтеринг
+                з обслуговуванням офіціантами. За потреби можливе барне
+                обслуговування заходу.У вартість кейтерингу може входити посуд,
+                скатертини та необхідне сервірування, що дозволяє організувати
+                свято навіть на локаціях без власної інфраструктури.Працюємо не
+                лише в місті, а й виїжджаємо за його межі. Умови доставки та
+                логістики узгоджуються індивідуально залежно від місця
+                проведення заходу.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h3 style="padding: 16px; font-size: 22px; text-align: center;"
+          >Забронюйте свою дату вже сьогодні та зробіть свято по-справжньому
+          незабутнім!</h3
+        >
+      </div>
+    </main>
+
+    <app-footer></app-footer>
+    <script src="../../scripts/buttonText.js"></script>
+    <script type="module" src="../../components/header/header.js"></script>
+    <script type="module" src="../../components/footer/footer.js"></script>
+    <script type="module" src="/src/scripts/load.js" defer></script>
+
+  </body>
+</html>
